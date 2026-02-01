@@ -26,6 +26,7 @@ paste that into cmd
 or
 
 pip install requirements.txt
+
 ----------------------------
 Download Lightwallet.py and ALL 3 of the txt files, and put them in a shared folder
 
