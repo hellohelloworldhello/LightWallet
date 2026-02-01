@@ -17,21 +17,42 @@ Core Features
     Wallet Management: View all saved addresses or delete specific entries directly through the CLI menu.
 
 # Installation
+### Installation
 
-The tool REQUIRES Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
+LightWalletCLI requires **Python 3.x** and specific **C++ components** to handle cryptographic functions.
 
-*pip install bip_utils requests web3*
-paste that into cmd
+---
 
-or
+#### 1. Install C++ Build Tools (Windows Only)
+The libraries `web3` and `bip-utils` often require C++ compilation during installation. If you encounter errors regarding "Microsoft Visual C++" or "Build Tools," you must install the following:
 
-*pip install requirements.txt*
+* Download the **[Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)**.
+* During installation, select **Desktop development with C++**.
+* Restart your computer once finished.
 
-----------------------------
-Download Lightwallet.py and ALL of the txt files, and put them in a shared folder
+#### 2. Install Python Dependencies
+Use the `python -m` flag to ensure libraries are installed correctly even if your system PATH is not fully configured:
 
-Open CMD in the folder and run this code:
-*python LightWalletCLI.py*
+```bash
+python -m pip install --upgrade pip
+python -m pip install requests bip-utils web3
+```
+
+#### 3. Verification
+Verify the installation by running this command in your terminal:
+
+```bash
+python -c "import web3; import bip_utils; import requests; print('Setup Successful')"
+```
+
+---
+
+### Running the Tool
+Put all the TXT files AND the LightWalletCLI.py in the same folder, navigate to your project folder and launch the application:
+
+```bash
+python LightWalletCLI.py
+```
 
 Done!
 
