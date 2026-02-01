@@ -15,7 +15,7 @@ Core Features
 
     Wallet Management: View all saved addresses or delete specific entries directly through the CLI menu.
 
-#Installation
+# Installation
 
 The tool requires Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
 
