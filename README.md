@@ -1,5 +1,4 @@
 # LightWallet
-LightWalletCLI
 
 LightWallet is a lightweight, command-line interface tool for managing Ethereum wallets. It provides a suite of features for generating new wallets, restoring existing ones via seed phrases, and monitoring balances directly from the terminal.
 Core Features
@@ -19,14 +18,13 @@ Installation
 The tool requires Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
 Bash
 
-pip install bip_utils requests web3
+# pip install bip_utils requests web3
 
 Usage
 
 Run the main script to enter the command interface:
-Bash
 
-python LightWalletCLI.py
+# python LightWallet.py
 
 Commands
 
