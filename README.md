@@ -20,18 +20,18 @@ Core Features
 
 The tool REQUIRES Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
 
-pip install bip_utils requests web3
+*pip install bip_utils requests web3*
 paste that into cmd
 
 or
 
-pip install requirements.txt
+*pip install requirements.txt*
 
 ----------------------------
-Download Lightwallet.py and ALL 3 of the txt files, and put them in a shared folder
+Download Lightwallet.py and ALL of the txt files, and put them in a shared folder
 
 Open CMD in the folder and run the code below
-python LightWalletCLI.py
+*python LightWalletCLI.py*
 
 Done!
 
