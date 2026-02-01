@@ -37,7 +37,8 @@ Command	Action
 -w	Withdraw interface (simulated network connection)
 -h	Help menu to show all commands
 -q	Quit the application
-Technical Architecture
+
+# Technical Architecture
 
 The tool utilizes the BIP44 hierarchical deterministic (HD) wallet standard to derive keys.
 
