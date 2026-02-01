@@ -30,7 +30,7 @@ or
 ----------------------------
 Download Lightwallet.py and ALL of the txt files, and put them in a shared folder
 
-Open CMD in the folder and run the code below
+Open CMD in the folder and run this code:
 *python LightWalletCLI.py*
 
 Done!
