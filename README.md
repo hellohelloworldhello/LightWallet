@@ -1,4 +1,5 @@
-<img width="570" height="114" alt="ascii-art-text" src="https://github.com/user-attachments/assets/da8cc55a-e286-45fa-8221-3cd3a82d101f" />
+<img width="769" height="218" alt="image" src="https://github.com/user-attachments/assets/b118f87b-27d8-4bec-b8d2-9a4cc50c8796" />
+
 
                                                                                     
 
@@ -17,15 +18,25 @@ Core Features
 
 # Installation
 
-The tool requires Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
+The tool REQUIRES Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
 
 pip install bip_utils requests web3
+paste that into cmd
+
+or
+
+pip install requirements.txt
+----------------------------
+Download Lightwallet.py and ALL 3 of the txt files, and put them in a shared folder
+
+Open CMD in the folder and run the code below
+python LightWalletCLI.py
+
+Done!
 
 # Usage
 
-Run the main script to enter the command interface:
-
-python LightWallet.py
+Use the commands below
 
 # Commands
 
