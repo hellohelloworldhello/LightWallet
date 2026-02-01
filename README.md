@@ -1,9 +1,5 @@
-'||'       ||          '||        .   '|| '||'  '|'         '||  '||            .   
- ||       ...    ... .  || ..   .||.   '|. '|.  .'   ....    ||   ||    ....  .||.  
- ||        ||   || ||   ||' ||   ||     ||  ||  |   '' .||   ||   ||  .|...||  ||   
- ||        ||    |''    ||  ||   ||      ||| |||    .|' ||   ||   ||  ||       ||   
-.||.....| .||.  '||||. .||. ||.  '|.'     |   |     '|..'|' .||. .||.  '|...'  '|.' 
-               .|....'                                                              
+<img width="570" height="114" alt="ascii-art-text" src="https://github.com/user-attachments/assets/da8cc55a-e286-45fa-8221-3cd3a82d101f" />
+
                                                                                     
 
 LightWallet is a lightweight, command-line interface tool for managing Ethereum wallets. It provides a suite of features for generating new wallets, restoring existing ones via seed phrases, and monitoring balances directly from the terminal.
