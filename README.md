@@ -16,22 +16,20 @@ Core Features
 
     Wallet Management: View all saved addresses or delete specific entries directly through the CLI menu.
 
-# Installation
 ### Installation
 
 LightWalletCLI requires **Python 3.x** and specific **C++ components** to handle cryptographic functions.
 
 ---
 
-#### 1. Install C++ Build Tools (Windows Only)
-The libraries `web3` and `bip-utils` often require C++ compilation during installation. If you encounter errors regarding "Microsoft Visual C++" or "Build Tools," you must install the following:
-
+#### 1. Install C++ Build Tools (Required for Web3/Bip-utils)
+If you are on a Windows VM, you must install the C++ compiler so the cryptographic libraries can build correctly:
 * Download the **[Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)**.
 * During installation, select **Desktop development with C++**.
-* Restart your computer once finished.
+* Restart your computer/VM once finished.
 
 #### 2. Install Python Dependencies
-Use the `python -m` flag to ensure libraries are installed correctly even if your system PATH is not fully configured:
+If you get a `ModuleNotFoundError` (e.g., "No module named requests"), do not use standard `pip install`. Use the `-m` flag to force Python to install the libraries into the correct environment:
 
 ```bash
 python -m pip install --upgrade pip
@@ -39,14 +37,11 @@ python -m pip install requests bip-utils web3
 ```
 
 #### 3. Verification
-Verify the installation by running this command in your terminal:
+Run this exact command to verify the VM recognizes all installed modules. If it prints **"Setup Successful"**, you are ready to go:
 
 ```bash
-python -c "import web3; import bip_utils; import requests; print('Setup Successful')"
+python -c "import requests; import web3; import bip_utils; print('Setup Successful')"
 ```
-
----
-
 ### Running the Tool
 Put all the TXT files AND the LightWalletCLI.py in the same folder, navigate to your project folder and launch the application:
 
