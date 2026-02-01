@@ -13,20 +13,19 @@ Core Features
 
     Wallet Management: View all saved addresses or delete specific entries directly through the CLI menu.
 
-Installation
+#Installation
 
 The tool requires Python 3.x and the following libraries for cryptographic derivation and blockchain interaction:
-Bash
 
-# pip install bip_utils requests web3
+pip install bip_utils requests web3
 
-Usage
+# Usage
 
 Run the main script to enter the command interface:
 
-# python LightWallet.py
+python LightWallet.py
 
-Commands
+# Commands
 
 Once the tool is running, use the following flags to navigate the features:
 Command	Action
