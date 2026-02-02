@@ -23,10 +23,10 @@ LightWalletCLI requires **Python 3.x** and specific **C++ components** to handle
 ---
 
 #### 1. Install C++ Build Tools (Required for Web3/Bip-utils)
-If you are on a Windows VM, you must install the C++ compiler so the cryptographic libraries can build correctly:
+You must install the C++ compiler so the cryptographic libraries can build correctly:
 * Download the **[Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)**.
 * During installation, select **Desktop development with C++**.
-* Restart your computer/VM once finished.
+* Restart your computer once finished.
 
 #### 2. Install Python Dependencies
 If you get a `ModuleNotFoundError` (e.g., "No module named requests"), do not use standard `pip install`. Use the `-m` flag to force Python to install the libraries into the correct environment:
@@ -43,7 +43,7 @@ Run this exact command to verify the VM recognizes all installed modules. If it 
 python -c "import requests; import web3; import bip_utils; print('Setup Successful')"
 ```
 ### Running the Tool
-Put all the TXT files AND the LightWalletCLI.py in the same folder, navigate to your project folder and launch the application:
+Put all the TXT files AND the LightWalletCLI.py in the same folder, navigate to your project folder and open CMD in that folder, then paste this:
 
 ```bash
 python LightWalletCLI.py
