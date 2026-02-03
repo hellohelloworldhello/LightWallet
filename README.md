@@ -37,7 +37,7 @@ python -m pip install requests bip-utils web3
 ```
 
 #### 3. Verification
-Run this exact command to verify the VM recognizes all installed modules. If it prints **"Setup Successful"**, you are ready to go:
+Run this exact command to verify the computer recognizes all installed modules. If it prints **"Setup Successful"**, you are ready to go:
 
 ```bash
 python -c "import requests; import web3; import bip_utils; print('Setup Successful')"
