@@ -8,6 +8,7 @@ from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum,
 from web3 import Web3
 
 os.system('cls' if os.name == 'nt' else 'clear')
+os.system('title LightWalletCLI')
 class COLOR:
     LIGHTBLUE1 = '\033[38;2;180;220;255m'  
     LIGHTBLUE2 = '\033[38;2;140;200;255m'  
