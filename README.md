@@ -17,7 +17,7 @@ Core Features
 
 ### Installation
 
-LightWalletCLI requires **Python 3.x** and specific **C++ components** to handle cryptographic functions.
+LightWalletCLI requires **Python 3.10** and specific **C++ components** to handle cryptographic functions.
 
 ---
 
