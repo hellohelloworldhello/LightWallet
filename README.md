@@ -58,12 +58,12 @@ Use the commands below
 
 Once the tool is running, use the following flags to navigate the features:
 Command	Action
--c	Create a brand new Ethereum wallet
+-c	Create a new Ethereum wallet
 -r	Restore a wallet using a 12/24 word seed phrase
 -b	Balance check for all saved addresses
 -a	All saved addresses display
 -d	Delete a specific saved wallet from local files
--w	Withdraw interface (simulated network connection)
+-w	Withdraw interface
 -h	Help menu to show all commands
 -q	Quit the application
 
