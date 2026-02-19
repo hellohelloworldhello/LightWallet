@@ -3,7 +3,7 @@
                                                                                     
 # LightWallet
 
-LightWallet is a lightweight, command-line interface tool for managing Ethereum wallets. It provides a suite of features for generating new wallets, restoring existing ones via seed phrases, and monitoring balances directly from the terminal.
+LightWallet is an open source, lightweight, command-line interface tool for managing Ethereum wallets. It provides a suite of features for generating new wallets, restoring existing ones via seed phrases, and monitoring balances directly from the terminal.
 
 ---
 
